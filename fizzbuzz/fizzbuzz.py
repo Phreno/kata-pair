@@ -1,9 +1,15 @@
 def fizzbuzz(arg: int):
-    if (is_fizz(arg)):
+    if is_fizzbuzz(arg):
+        return "fizzbuzz"
+    elif is_fizz(arg):
         return "fizz"
-    if (is_buzz(arg)):
+    elif is_buzz(arg):
         return "buzz"
     return arg
+
+
+def is_fizzbuzz(arg: int):
+    return is_fizz(arg) and is_buzz(arg)
 
 
 def is_fizz(arg: int):
