@@ -1,4 +1,4 @@
 def fizzbuzz(arg: int):
-    if 3 == arg:
+    if (arg % 3 == 0):
         return "fizz"
     return arg
